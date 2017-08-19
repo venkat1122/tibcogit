@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_YZ9pIITfEeesZsLvDDzx5Q" targetNamespace="http://tns.tibco.com/bw/composite/sampleREST.module" name="sampleREST.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_si4fMITfEeesZsLvDDzx5Q" name="venkat" promote="Componentsample/venkat">
+    <sca:interface.wsdl xmi:id="_sld5IITfEeesZsLvDDzx5Q" interface="http://xmlns.example.com/20170819183950PLT#wsdl.interface(venkat)" scaext:wsdlLocation="../Processes/samplerest/module/sample.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_sm8f0ITfEeesZsLvDDzx5Q" name="RestService" path="/venkat" docBasePath="http://localhost:7777/sampleREST.module" docResourcePath="sample" basePath="/" connector="samplerest.module.sample" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/samplerest.module.sample-sample.json">
+      <operation xmi:id="_snHe8ITfEeesZsLvDDzx5Q" operationName="get" nickname="get-venkat" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_stDu4ITfEeesZsLvDDzx5Q"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_snHe8YTfEeesZsLvDDzx5Q" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_dEoogITfEeesZsLvDDzx5Q" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dFN3UITfEeesZsLvDDzx5Q" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dFXBQITfEeesZsLvDDzx5Q" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dFe9EITfEeesZsLvDDzx5Q" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dFnf8ITfEeesZsLvDDzx5Q" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dFvbwITfEeesZsLvDDzx5Q" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dF3XkITfEeesZsLvDDzx5Q" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dGC9wITfEeesZsLvDDzx5Q" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dGMHsITfEeesZsLvDDzx5Q" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_shD6QITfEeesZsLvDDzx5Q" name="Componentsample" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_shD6QYTfEeesZsLvDDzx5Q" processName="samplerest.module.sample"/>
+    <sca:service xmi:id="_sh8rEITfEeesZsLvDDzx5Q" name="venkat">
+      <sca:interface.wsdl xmi:id="_sibzQITfEeesZsLvDDzx5Q" interface="http://xmlns.example.com/20170819183950PLT#wsdl.interface(venkat)" scaext:wsdlLocation="../Processes/samplerest/module/sample.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
